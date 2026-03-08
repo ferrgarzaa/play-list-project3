@@ -1,68 +1,59 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="Description" content="Demonstration for play-list-project3" />
 
-<head>
-  <base href="/">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Demonstration for play-list-project3">
+    <style>
+      :root,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-  <style>
-    :root, html, body {
-      margin: var(--ddd-spacing-0);
-      padding: var(--ddd-spacing-0);
-    }
-    #demo {
-      margin: var(--ddd-spacing-2);
-    }
-    play-list-project3 {
-      margin: var(--ddd-spacing-2);
-      border: var(--ddd-border-md);
-      border-radius: var(--ddd-radius-lg);
-      display: block;
-    }
-    play-list-project3:hover {
-      box-shadow: var(--ddd-boxShadow-sm);
-    }
-  </style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-  <title>play-list-project3</title>
-</head>
+      #demo {
+        margin: var(--ddd-spacing-4, 16px);
+      }
 
-<body>
-  <div id="demo">
-    <h1>play-list-project3</h1>
+      play-list-project3 {
+        display: block;
+        margin: var(--ddd-spacing-2, 8px) 0;
+      }
+    </style>
 
-    <play-list-project3 index="0">
+    <title>play-list-project3</title>
+  </head>
 
-      <play-list-slide top-heading="Top line heading" second-heading="Slide 1, sub-heading">
-        <p>
-          This is slide 1 content. Add more text here to test scrolling.
-        </p>
-      </play-list-slide>
+  <body>
+    <div id="demo">
+      <h1>play-list-project3</h1>
 
-      <play-list-slide top-heading="Top line heading" second-heading="Slide 2, sub-heading">
-        <p>
-          This is slide 2 content. More text here.
-        </p>
-      </play-list-slide>
+      <play-list-project3 index="0">
+        <play-list-slide top-heading="Top line heading" second-heading="Slide 1, sub-heading">
+          <p>This is slide 1 content. Add more text here to test scrolling.</p>
+        </play-list-slide>
 
-      <play-list-slide top-heading="Top line heading" second-heading="Slide 3, sub-heading">
-        <p>
-          This is slide 3 content.
-        </p>
-      </play-list-slide>
+        <play-list-slide top-heading="Top line heading" second-heading="Slide 2, sub-heading">
+          <p>This is slide 2 content. More text here.</p>
+        </play-list-slide>
 
-      <play-list-slide top-heading="Top line heading" second-heading="Slide 4, sub-heading">
-        <p>
-          This is slide 4 content.
-        </p>
-      </play-list-slide>
+        <play-list-slide top-heading="Top line heading" second-heading="Slide 3, sub-heading">
+          <p>This is slide 3 content.</p>
+        </play-list-slide>
 
-    </play-list-project3>
-  </div>
+        <play-list-slide top-heading="Top line heading" second-heading="Slide 4, sub-heading">
+          <p>This is slide 4 content.</p>
+        </play-list-slide>
+      </play-list-project3>
+    </div>
 
-  <script type="module" src="./play-list-project3.js"></script>
-</body>
-
+    <script type="module" src="./play-list-project3.js"></script>
+  </body>
 </html>
